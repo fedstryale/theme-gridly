@@ -137,7 +137,7 @@
               <p class="post-tags">{{- post.tags|format_tags(humanize=True) -}}</p>
               {% endif %}
               {% if post.content|striptags|wordcount > 0 %}
-              <p>{{ post.content|striptags|truncate(200) }}</p>
+              <p>{{ post.content|striptags|truncate(100) }}</p>
               <p class="post-link"><a href="{{ post.permalink }}">View more &rarr;</a></p>
               {% endif %}
             </div>
